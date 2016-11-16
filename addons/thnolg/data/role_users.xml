@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data noupdate="1">
+        <record id="thnolg_category" model="ir.module.category">
+            <field name="name">The HellNet.org</field>
+            <field name="description">The HellNet.org group</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="thnolg_group_superadmin" model="res.groups">
+            <field name="name">Super Admin</field>
+            <field name="category_id" ref="thnolg_category"/>
+        </record>
+        <record id="thnolg_group_serveradmin" model="res.groups">
+            <field name="name">Server Admin</field>
+            <field name="category_id" ref="thnolg_category"/>
+        </record>
+
+        <record id="thnolg_partner_superadmin" model="res.partner">
+            <field name="name">Super Admin</field>
+        </record>
+        <record id="thnolg_partner_serveradmin" model="res.partner">
+            <field name="name">Server Admin</field>
+        </record>
+
+        <record id="thnolg_user_superadmin" model="res.users">
+            <field name="login">thnolg_superadmin</field>
+            <field name="password">thnolg_superadmin</field>
+            <field name="partner_id" ref="thnolg_partner_superadmin"/>
+            <field name="groups_id" eval="[(4,ref('thnolg_group_superadmin'))]"/>
+        </record>
+        <record id="thnolg_user_serveradmin" model="res.users">
+            <field name="login">thnolg_serveradmin</field>
+            <field name="password">thnolg_serveradmin</field>
+            <field name="partner_id" ref="thnolg_partner_serveradmin"/>
+            <field name="groups_id" eval="[(4,ref('thnolg_group_serveradmin'))]"/>
+        </record>
+    </data>
+</odoo>

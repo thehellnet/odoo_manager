@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data noupdate="1">
+        <record id="thnlog_game_q3a" model="thnolg.game">
+            <field name="tag">q3a</field>
+            <field name="friendly_name">Quake III Arena</field>
+        </record>
+        <record id="thnlog_game_q3ut4" model="thnolg.game">
+            <field name="tag">q3ut4</field>
+            <field name="friendly_name">UrbanTerror 4</field>
+        </record>
+        <record id="thnlog_game_cod" model="thnolg.game">
+            <field name="tag">cod</field>
+            <field name="friendly_name">Call of Duty</field>
+        </record>
+        <record id="thnlog_game_cod2" model="thnolg.game">
+            <field name="tag">cod2</field>
+            <field name="friendly_name">Call of Duty 2</field>
+        </record>
+        <record id="thnlog_game_cod4" model="thnolg.game">
+            <field name="tag">cod4</field>
+            <field name="friendly_name">Call of Duty 4</field>
+        </record>
+        <record id="thnlog_game_codwaw" model="thnolg.game">
+            <field name="tag">codwaw</field>
+            <field name="friendly_name">Call of Duty: World at War</field>
+        </record>
+
+        <record id="thnlog_gametype_dm" model="thnolg.gametype">
+            <field name="name">Deathmatch</field>
+        </record>
+        <record id="thnlog_gametype_tdm" model="thnolg.gametype">
+            <field name="name">Team Deathmatch</field>
+        </record>
+        <record id="thnlog_gametype_hq" model="thnolg.gametype">
+            <field name="name">Headquarters</field>
+        </record>
+        <record id="thnlog_gametype_sd" model="thnolg.gametype">
+            <field name="name">Search and Destroy</field>
+        </record>
+        <record id="thnlog_gametype_bel" model="thnolg.gametype">
+            <field name="name">Behind enemy lines</field>
+        </record>
+        <record id="thnlog_gametype_ret" model="thnolg.gametype">
+            <field name="name">Retrieval</field>
+        </record>
+        <record id="thnlog_gametype_ctf" model="thnolg.gametype">
+            <field name="name">Capture the flag</field>
+        </record>
+        <record id="thnlog_gametype_dom" model="thnolg.gametype">
+            <field name="name">Domination</field>
+        </record>
+        <record id="thnlog_gametype_sab" model="thnolg.gametype">
+            <field name="name">Sabotage</field>
+        </record>
+        <record id="thnlog_gametype_bm" model="thnolg.gametype">
+            <field name="name">Bomb mode</field>
+        </record>
+        <record id="thnlog_gametype_ts" model="thnolg.gametype">
+            <field name="name">Team survivor</field>
+        </record>
+        <record id="thnlog_gametype_ftl" model="thnolg.gametype">
+            <field name="name">Follow the leader</field>
+        </record>
+        <record id="thnlog_gametype_cah" model="thnolg.gametype">
+            <field name="name">Capture and hold</field>
+        </record>
+        <record id="thnlog_gametype_jt" model="thnolg.gametype">
+            <field name="name">Jump training</field>
+        </record>
+        <record id="thnlog_gametype_ft" model="thnolg.gametype">
+            <field name="name">Freeze tag</field>
+        </record>
+        <record id="thnlog_gametype_lms" model="thnolg.gametype">
+            <field name="name">Last man standing</field>
+        </record>
+        <record id="thnlog_gametype_twar" model="thnolg.gametype">
+            <field name="name">Total war</field>
+        </record>
+        <record id="thnlog_gametype_tou" model="thnolg.gametype">
+            <field name="name">Tournament</field>
+        </record>
+        <record id="thnlog_gametype_sp" model="thnolg.gametype">
+            <field name="name">Single player</field>
+        </record>
+        <record id="thnlog_gametype_ofc" model="thnolg.gametype">
+            <field name="name">One flag CTF</field>
+        </record>
+        <record id="thnlog_gametype_ov" model="thnolg.gametype">
+            <field name="name">Overload</field>
+        </record>
+        <record id="thnlog_gametype_har" model="thnolg.gametype">
+            <field name="name">Harvester</field>
+        </record>
+
+        <record id="thnlog_gamegametype_q3a_dm" model="thnolg.gametype">
+            <field name="name">Harvester</field>
+        </record>
+
+        <record id="thnlog_gamegametype_q3a_dm" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3a"/>
+            <field name="gametype" ref="thnlog_gametype_dm"/>
+            <field name="tag">0</field>
+        </record>
+        <record id="thnlog_gamegametype_q3a_tou" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3a"/>
+            <field name="gametype" ref="thnlog_gametype_tou"/>
+            <field name="tag">1</field>
+        </record>
+        <record id="thnlog_gamegametype_q3a_sp" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3a"/>
+            <field name="gametype" ref="thnlog_gametype_sp"/>
+            <field name="tag">2</field>
+        </record>
+        <record id="thnlog_gamegametype_q3a_tdm" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3a"/>
+            <field name="gametype" ref="thnlog_gametype_tdm"/>
+            <field name="tag">3</field>
+        </record>
+        <record id="thnlog_gamegametype_q3a_ctf" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3a"/>
+            <field name="gametype" ref="thnlog_gametype_ctf"/>
+            <field name="tag">4</field>
+        </record>
+        <record id="thnlog_gamegametype_q3a_ofc" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3a"/>
+            <field name="gametype" ref="thnlog_gametype_ofc"/>
+            <field name="tag">5</field>
+        </record>
+        <record id="thnlog_gamegametype_q3a_ov" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3a"/>
+            <field name="gametype" ref="thnlog_gametype_ov"/>
+            <field name="tag">6</field>
+        </record>
+        <record id="thnlog_gamegametype_q3a_har" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3a"/>
+            <field name="gametype" ref="thnlog_gametype_har"/>
+            <field name="tag">7</field>
+        </record>
+        <record id="thnlog_gamegametype_q3ut4_dm" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3ut4"/>
+            <field name="gametype" ref="thnlog_gametype_dm"/>
+            <field name="tag">0</field>
+        </record>
+        <record id="thnlog_gamegametype_q3ut4_tdm" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3ut4"/>
+            <field name="gametype" ref="thnlog_gametype_tdm"/>
+            <field name="tag">3</field>
+        </record>
+        <record id="thnlog_gamegametype_q3ut4_ts" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3ut4"/>
+            <field name="gametype" ref="thnlog_gametype_ts"/>
+            <field name="tag">4</field>
+        </record>
+        <record id="thnlog_gamegametype_q3ut4_ftl" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3ut4"/>
+            <field name="gametype" ref="thnlog_gametype_ftl"/>
+            <field name="tag">5</field>
+        </record>
+        <record id="thnlog_gamegametype_q3ut4_cah" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3ut4"/>
+            <field name="gametype" ref="thnlog_gametype_cah"/>
+            <field name="tag">6</field>
+        </record>
+        <record id="thnlog_gamegametype_q3ut4_ctf" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3ut4"/>
+            <field name="gametype" ref="thnlog_gametype_ctf"/>
+            <field name="tag">7</field>
+        </record>
+        <record id="thnlog_gamegametype_q3ut4_bm" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3ut4"/>
+            <field name="gametype" ref="thnlog_gametype_bm"/>
+            <field name="tag">8</field>
+        </record>
+        <record id="thnlog_gamegametype_q3ut4_jt" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3ut4"/>
+            <field name="gametype" ref="thnlog_gametype_jt"/>
+            <field name="tag">9</field>
+        </record>
+        <record id="thnlog_gamegametype_q3ut4_ft" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_q3ut4"/>
+            <field name="gametype" ref="thnlog_gametype_ft"/>
+            <field name="tag">10</field>
+        </record>
+        <record id="thnlog_gamegametype_cod_dm" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod"/>
+            <field name="gametype" ref="thnlog_gametype_dm"/>
+            <field name="tag">dm</field>
+        </record>
+        <record id="thnlog_gamegametype_cod_tdm" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod"/>
+            <field name="gametype" ref="thnlog_gametype_tdm"/>
+            <field name="tag">tdm</field>
+        </record>
+        <record id="thnlog_gamegametype_cod_hq" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod"/>
+            <field name="gametype" ref="thnlog_gametype_hq"/>
+            <field name="tag">hq</field>
+        </record>
+        <record id="thnlog_gamegametype_cod_sd" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod"/>
+            <field name="gametype" ref="thnlog_gametype_sd"/>
+            <field name="tag">sd</field>
+        </record>
+        <record id="thnlog_gamegametype_cod_bel" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod"/>
+            <field name="gametype" ref="thnlog_gametype_bel"/>
+            <field name="tag">bel</field>
+        </record>
+        <record id="thnlog_gamegametype_cod_ret" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod"/>
+            <field name="gametype" ref="thnlog_gametype_ret"/>
+            <field name="tag">re</field>
+        </record>
+        <record id="thnlog_gamegametype_cod2_dm" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod2"/>
+            <field name="gametype" ref="thnlog_gametype_dm"/>
+            <field name="tag">dm</field>
+        </record>
+        <record id="thnlog_gamegametype_cod2_tdm" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod2"/>
+            <field name="gametype" ref="thnlog_gametype_tdm"/>
+            <field name="tag">tdm</field>
+        </record>
+        <record id="thnlog_gamegametype_cod2_hq" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod2"/>
+            <field name="gametype" ref="thnlog_gametype_hq"/>
+            <field name="tag">hq</field>
+        </record>
+        <record id="thnlog_gamegametype_cod2_sd" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod2"/>
+            <field name="gametype" ref="thnlog_gametype_sd"/>
+            <field name="tag">sd</field>
+        </record>
+        <record id="thnlog_gamegametype_cod2_ctf" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod2"/>
+            <field name="gametype" ref="thnlog_gametype_ctf"/>
+            <field name="tag">ctf</field>
+        </record>
+        <record id="thnlog_gamegametype_cod4_dm" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod4"/>
+            <field name="gametype" ref="thnlog_gametype_dm"/>
+            <field name="tag">dm</field>
+        </record>
+        <record id="thnlog_gamegametype_cod4_tdm" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod4"/>
+            <field name="gametype" ref="thnlog_gametype_tdm"/>
+            <field name="tag">war</field>
+        </record>
+        <record id="thnlog_gamegametype_cod4_hq" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod4"/>
+            <field name="gametype" ref="thnlog_gametype_hq"/>
+            <field name="tag">koth</field>
+        </record>
+        <record id="thnlog_gamegametype_cod4_sd" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod4"/>
+            <field name="gametype" ref="thnlog_gametype_sd"/>
+            <field name="tag">sd</field>
+        </record>
+        <record id="thnlog_gamegametype_cod4_dom" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod4"/>
+            <field name="gametype" ref="thnlog_gametype_dom"/>
+            <field name="tag">dom</field>
+        </record>
+        <record id="thnlog_gamegametype_cod4_sab" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_cod4"/>
+            <field name="gametype" ref="thnlog_gametype_sab"/>
+            <field name="tag">sab</field>
+        </record>
+        <record id="thnlog_gamegametype_codwaw_dm" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_codwaw"/>
+            <field name="gametype" ref="thnlog_gametype_dm"/>
+            <field name="tag">dm</field>
+        </record>
+        <record id="thnlog_gamegametype_codwaw_tdm" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_codwaw"/>
+            <field name="gametype" ref="thnlog_gametype_tdm"/>
+            <field name="tag">tdm</field>
+        </record>
+        <record id="thnlog_gamegametype_codwaw_hq" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_codwaw"/>
+            <field name="gametype" ref="thnlog_gametype_hq"/>
+            <field name="tag">koth</field>
+        </record>
+        <record id="thnlog_gamegametype_codwaw_sd" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_codwaw"/>
+            <field name="gametype" ref="thnlog_gametype_sd"/>
+            <field name="tag">sd</field>
+        </record>
+        <record id="thnlog_gamegametype_codwaw_dom" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_codwaw"/>
+            <field name="gametype" ref="thnlog_gametype_dom"/>
+            <field name="tag">dom</field>
+        </record>
+        <record id="thnlog_gamegametype_codwaw_sab" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_codwaw"/>
+            <field name="gametype" ref="thnlog_gametype_sab"/>
+            <field name="tag">sab</field>
+        </record>
+        <record id="thnlog_gamegametype_codwaw_ctf" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_codwaw"/>
+            <field name="gametype" ref="thnlog_gametype_ctf"/>
+            <field name="tag">ctf</field>
+        </record>
+        <record id="thnlog_gamegametype_codwaw_twar" model="thnolg.gamegametype">
+            <field name="game" ref="thnlog_game_codwaw"/>
+            <field name="gametype" ref="thnlog_gametype_twar"/>
+            <field name="tag">twar</field>
+        </record>
+    </data>
+</odoo>

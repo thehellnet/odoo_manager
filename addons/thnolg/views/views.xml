@@ -1,0 +1,300 @@
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="thnolg.game_tree">
+            <field name="name">Game</field>
+            <field name="model">thnolg.game</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="tag" placeholder="Tag"/>
+                    <field name="friendly_name" placeholder="Friendly Name"/>
+                    <field name="game_gametypes"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="thnolg.game_form">
+            <field name="name">Game</field>
+            <field name="model">thnolg.game</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="icon" widget="image" string="Game icon"
+                               style="width: 48px; height: 48px;"/>
+                    </group>
+                    <group>
+                        <field name="tag" placeholder="Tag"/>
+                        <field name="friendly_name" placeholder="Friendly Name"/>
+                    </group>
+                    <field name="game_gametypes"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="thnolg.gametype_tree">
+            <field name="name">Gametype</field>
+            <field name="model">thnolg.gametype</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="thnolg.gametype_form">
+            <field name="name">Gametype</field>
+            <field name="model">thnolg.gametype</field>
+            <field name="arch" type="xml">
+                <form>
+                    <field name="name"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="thnolg.gamegametype_tree">
+            <field name="name">Gametypes</field>
+            <field name="model">thnolg.gamegametype</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="gametype"/>
+                    <field name="tag"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="thnolg.gamegametype_form">
+            <field name="name">Gametypes</field>
+            <field name="model">thnolg.gamegametype</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group col="2">
+                        <field name="game"/>
+                        <field name="gametype"/>
+                    </group>
+                    <field name="tag"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="thnolg.olgserver_tree">
+            <field name="name">Server</field>
+            <field name="model">thnolg.olgserver</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="enabled"/>
+                    <field name="tag"/>
+                    <field name="friendly_name"/>
+                    <field name="address"/>
+                    <field name="port"/>
+                    <field name="game"/>
+                    <field name="rcon_password"/>
+                    <field name="enable_adv"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="thnolg.olgserver_form">
+            <field name="name">Server</field>
+            <field name="model">thnolg.olgserver</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="tag"/>
+                        <field name="friendly_name"/>
+                    </group>
+                    <group>
+                        <field name="address"/>
+                        <field name="port"/>
+                    </group>
+                    <group>
+                        <field name="game"/>
+                        <field name="rcon_password"/>
+                    </group>
+                    <field name="enabled"/>
+                    <field name="enable_adv"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="thnolg.olgmap_tree">
+            <field name="name">Server</field>
+            <field name="model">thnolg.olgmap</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="tag"/>
+                    <field name="friendly_name"/>
+                    <field name="game"/>
+                    <field name="gametypes"/>
+                    <field name="servers"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="thnolg.olgmap_form">
+            <field name="name">Server</field>
+            <field name="model">thnolg.olgmap</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="tag"/>
+                        <field name="friendly_name"/>
+                        <field name="game"/>
+                    </group>
+                    <field name="gametypes"/>
+                    <field name="servers"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="thnolg.player_tree">
+            <field name="name">Server</field>
+            <field name="model">thnolg.player</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="guid"/>
+                    <field name="user"/>
+                    <field name="game"/>
+                    <field name="servers"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="thnolg.player_form">
+            <field name="name">Server</field>
+            <field name="model">thnolg.player</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="guid"/>
+                    </group>
+                    <group>
+                        <field name="user"/>
+                        <field name="game"/>
+                    </group>
+                    <field name="servers"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="thnolg.adv_tree">
+            <field name="name">Server</field>
+            <field name="model">thnolg.adv</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="message"/>
+                    <field name="priority"/>
+                    <field name="weight"/>
+                    <field name="enabled"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="thnolg.adv_form">
+            <field name="name">Server</field>
+            <field name="model">thnolg.adv</field>
+            <field name="arch" type="xml">
+                <form>
+                    <field name="message"/>
+                    <field name="priority"/>
+                    <field name="weight"/>
+                    <field name="enabled"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="thnolg.action_game_list">
+            <field name="name">Game</field>
+            <field name="res_model">thnolg.game</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="thnolg.action_gametype_list">
+            <field name="name">Gametype</field>
+            <field name="res_model">thnolg.gametype</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="thnolg.action_olgserver_list">
+            <field name="name">Servers</field>
+            <field name="res_model">thnolg.olgserver</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="thnolg.action_olgmap_list">
+            <field name="name">Maps</field>
+            <field name="res_model">thnolg.olgmap</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="thnolg.action_player_list">
+            <field name="name">Players</field>
+            <field name="res_model">thnolg.player</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="thnolg.action_adv_list">
+            <field name="name">Advertises</field>
+            <field name="res_model">thnolg.adv</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- server action to the one above -->
+        <!--
+        <record model="ir.actions.server" id="thnolg.action_server">
+          <field name="name">thnolg server</field>
+          <field name="model_id" ref="model_thnolg_thnolg"/>
+          <field name="code">
+            action = {
+              "type": "ir.actions.act_window",
+              "view_mode": "tree,form",
+              "res_model": self._name,
+            }
+          </field>
+        </record>
+        -->
+
+        <menuitem name="ThnOlg" id="thnolg.menu_root"
+                  groups="thnolg_group_superadmin"/>
+
+        <menuitem id="thnolg.menu_actions"
+                  name="Actions"
+                  parent="thnolg.menu_root"
+                  sequence="0"/>
+
+        <menuitem id="thnolg.menu_actions_mapchange"
+                  parent="thnolg.menu_actions"
+                  name="Change map"
+                  action="thnolg.action_game_list"/>
+
+        <menuitem id="thnolg.menu_entities"
+                  name="Entities"
+                  parent="thnolg.menu_root"
+                  sequence="1"/>
+
+        <menuitem id="thnolg.menu_game_list"
+                  parent="thnolg.menu_entities"
+                  name="Games"
+                  action="thnolg.action_game_list"/>
+        <menuitem id="thnolg.menu_gametype_list"
+                  parent="thnolg.menu_entities"
+                  name="Gametypes"
+                  action="thnolg.action_gametype_list"/>
+        <menuitem id="thnolg.menu_olgserver_list"
+                  parent="thnolg.menu_entities"
+                  name="Servers"
+                  action="thnolg.action_olgserver_list"/>
+        <menuitem id="thnolg.menu_olgmap_list"
+                  parent="thnolg.menu_entities"
+                  name="Maps"
+                  action="thnolg.action_olgmap_list"/>
+        <menuitem id="thnolg.menu_player_list"
+                  parent="thnolg.menu_entities"
+                  name="Players"
+                  action="thnolg.action_player_list"/>
+        <menuitem id="thnolg.menu_adv_list"
+                  parent="thnolg.menu_entities"
+                  name="Advertisement"
+                  action="thnolg.action_adv_list"/>
+    </data>
+</openerp>
